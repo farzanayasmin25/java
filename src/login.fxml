@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="login">
+   <children>
+      <ImageView fitHeight="400" fitWidth="600" preserveRatio="true">
+         <image>
+            <Image url="@img/f.jpg" />
+         </image>
+      </ImageView>
+
+      <Pane layoutX="135.0" layoutY="88.0" prefHeight="240.0" prefWidth="331.0" style="-fx-background-color: rgba(255,255,255,0.8); -fx-padding: 20px; -fx-background-radius: 10;">
+         <children>
+            <Label layoutX="50.0" prefHeight="41.0" prefWidth="281.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="WELCOME TO OSMANY HALL">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font></Label>
+            <Label layoutX="130.0" layoutY="41.0" prefHeight="25.0" prefWidth="74.0" style="-fx-font-size: 16px;" text="Login">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+
+            <TextField layoutX="50.0" layoutY="83.0" prefHeight="25.0" prefWidth="224.0" promptText="Username" />
+            <PasswordField layoutX="50.0" layoutY="123.0" prefHeight="25.0" prefWidth="224.0" promptText="Password" />
+            <Button layoutX="56.0" layoutY="171.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #1c63b9;" text="Login" />
+            <Hyperlink layoutX="179.0" layoutY="148.0" onAction="#handleForgotPassword" text="Forgot Password?" underline="true" />
+            <Label layoutX="69.0" layoutY="208.0" text="Don't have an account?">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Button layoutX="214.0" layoutY="206.0" onAction="#handleSignUp" style="-fx-background-color: transparent;" text="Sign Up" textFill="#1c63b9" underline="true" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

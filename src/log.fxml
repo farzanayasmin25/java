@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="your.package.Controller"
+            style="-fx-background-image: url('background.jpg'); -fx-background-size: cover;">
+
+    <!-- Title -->
+    <Label text="WELCOME TO ISMANY HALL" layoutX="220" layoutY="50"
+           style="-fx-font-size: 36px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+    <!-- VBox for buttons -->
+    <VBox layoutX="220" layoutY="150" spacing="20">
+
+        <!-- Student Button -->
+        <Button text="STUDENT" style="-fx-font-size: 18px; -fx-font-weight: bold;">
+            <graphic>
+                <ImageView fitHeight="100" fitWidth="100">
+                    <Image url="@student.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <!-- Staff Button -->
+        <Button text="STAFF" style="-fx-font-size: 18px; -fx-font-weight: bold;">
+            <graphic>
+                <ImageView fitHeight="100" fitWidth="100">
+                    <Image url="@staff.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <!-- DSW Button -->
+        <Button text="DSW" style="-fx-font-size: 18px; -fx-font-weight: bold;">
+            <graphic>
+                <ImageView fitHeight="100" fitWidth="100">
+                    <Image url="@dsw.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+
+    </VBox>
+</AnchorPane>
